@@ -71,7 +71,7 @@ const LeaderboardPage = () => {
   useEffect(() => {
     const fetchLeaderboard = async () => {
       try {
-        const { data } = await api.get(`${import.meta.env.VITE_API_URL}/api/users/leaderboard`);
+        const { data } = await api.get("/users/leaderboard");
         setLeaderboard(data.leaderboard);
       } catch (err) {
         setError("Could not load leaderboard.");
