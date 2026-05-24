@@ -6,7 +6,7 @@ const connectDB = require("./config/db");
 const { configureStreamPermissions } = require("./utils/stream.utils");
 require("dotenv").config();
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8080;
 
 // Connect to MongoDB, configure Stream permissions, then start the server
 connectDB().then(async () => {
