@@ -1,4 +1,4 @@
-# SkillForge 🔥
+# SkillForge - A modernized course selling app
 
 > A gamified course-selling platform with AI-powered peer matching, built with nodeJs and ReactJs.
 
