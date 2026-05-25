@@ -73,7 +73,8 @@ const app = express();
 // Allow requests from the React frontend
 app.use(
   cors({
-    origin: process.env.CLIENT_URL || "http://localhost:5173",
+    origin: [process.env.CLIENT_URL || "http://localhost:5173",
+    "https://skill-forge-new.vercel.app"],
     credentials: true,
   })
 );
